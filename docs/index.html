@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="vim,course,kurs,markdown,slideshow,presentation" />
+    <meta name="description" content="Et VIM-kurs" />
+    <title>VIM-kurs</title>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      img {max-width: 100%;}
+      body {font-family: 'Droid Serif'; font-size: 100%; color: #333;}
+      h1, h2, h3, h4 {font-family: 'Yanone Kaffeesatz'; font-weight: normal;}
+      h1, h2, h3, h4, p {margin-top: 1rem; margin-bottom: 0.1rem;}
+      h3 {color: #aaa;}
+      .hl {color: rgb(249, 38, 114); text-decoration: none;}
+      a {color: rgb(249, 38, 114); text-decoration: none;}
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .inverse {background: #272822; color: #777872; text-shadow: 0 0 20px #333;}
+      .inverse h1 {color: #f3f3f3; line-height: 0.8em;}
+      .remark-slide-content h1 {font-size: 4rem;}
+      .remark-slide-content h2 {font-size: 2.8rem; font-style: italic; }
+      .remark-slide-content.left {text-align: left;}
+      .remark-code {text-align: left; font-size: 2rem;}
+      .remark-slide-number { display: none; }
+      .remark-notes-preview-area {display: none}
+      .remark-notes-current-area {height: 100% !important;}
+      .remark-notes { font-size: 1.2rem; }
+      .left-col {width: 50%; float: left; padding-top: 1em; text-align: left;}
+      .right-col {width: 50%; float: right; padding-top: 1em; text-align: left;}
+      code {color: rgb(249, 38, 114) !important; background-color: #333; font-style: normal;}
+    </style>
+</style>
+  </head>
+  <body>
+    <textarea id="source">name: level
+layout: false
+class: middle, center
+---
+name: inverse
+layout: true
+class: middle, center, inverse
+---
+# A guide to VIM mastery!
+.hl[
+## [torgeir/vim-workshop](//github.com/torgeir/vim-workshop)
+]
+---
+# Setup
+.left[
+## If on github
+### Type `.`
+<br>
+## If in a terminal
+### `git clone git@github.com:torgeir/vim-workshop.git && vim .`
+]
+---
+template: level
+# LEVEL 0
+## "Qualifiers"
+---
+# Quit
+.left[
+## Hammer esc to escape everything you got going on..
+## `<esc><esc><es..`
+## Then
+### `:q!` <u>q</u>uit buffer, without saving.
+### `:qa!` <u>q</u>uit <u>a</u>ll buffers, discarding changes.
+### `:wq!` <u>w</u>rite file and <u>q</u>uit.
+]
+---
+# Help
+.left[
+## An actually useful manual!
+## `:h[elp] <subject>`
+<br>
+## Try these:
+### `:help :qa!`
+### `:hel :qa!`
+### `:he :qa!`
+### `:h :qa!`
+]
+---
+# Now, open it again..
+.left[
+## Depending on what you did, with
+### `vim README.md`
+## or
+### `:e README.md`
+]
+---
+template: level
+# LEVEL 1
+## "Look ma', I can VIM"
+---
+# Modal editor
+## Different modes do different things!
+.left[
+## `normal`
+### - Text operations. Moving around.
+## `insert`
+### - Editing text.
+## `visual`
+### - Highligting text. Operations on regions.
+]
+---
+# Move the cursor
+## More than two of these in a row is cheating!
+.left-col[
+### `h` left
+### `j` down
+### `k` up
+### `l` right
+]
+--
+.right-col[
+### `3h` three columns left
+### `3k` three rows up
+### `3j` three rows down
+### `3l` three columns right
+]
+---
+# How do I type actual text??
+## And not just delete stuff. When in normal mode..
+.left-col[
+### `i` <u>i</u>nsert mode before marker
+### `a` insert mode <u>a</u>fter marker
+### `<esc>` <u>esc</u>ape back to the safe haven that is normal mode!
+]
+--
+.right-col[
+### `I` insert mode at start of line
+### `A` insert mode at end of line
+### `o` open line below
+### `O` open line above
+]
+???
+- Large modifiers often do the opposite
+- Or variants of a command
+---
+# Write
+## Write contents of the buffer to a file.
+.left[
+### `:w[rite] [file]` Write to the given file
+### `:w [file]` The same
+### `:w` Write to the current file
+]
+---
+template: level
+# LEVEL 2
+## "I got this."
+---
+# Search
+.left-col[
+## `/` search forward
+## `?` search backward
+]
+.right-col[
+## `n` skip to <u>n</u>ext match
+## `p` skip to <u>p</u>revious match
+]
+???
+- Works on github
+- Works on google
+---
+# Yank, paste and delete
+## Like it was ctrl+c, ctrl+v..
+.left[
+### `yy` yank aka copy the line
+### `dd` delete the line
+### `p` paste line
+]
+---
+# Jump
+.left[
+### `gg` <u>g</u>o to the beginning of the file
+### `2gg` <u>g</u>o to line 2
+### `G` <u>g</u>o to end of file
+]
+???
+Repeated commands indiate movement is expected
+---
+template: level
+# LEVEL 3
+## "How'd you do that?!"
+---
+# Commands
+## Are built with these building blocks.
+.left[
+## `<operation>`
+## `<number-of-times>`
+## `<surrounding>`
+## `<text object>` or `<motion>`
+]
+---
+# Text Objects
+.left[
+## Surroundings
+### `a` <u>a</u>round, e.g. including quotes or whitespace
+### `i` <u>i</u>nside, e.g. inside quotes or whitespace
+]
+--
+.left-col[
+## Objects
+### `w` <u>w</u>ord
+### `t` <u>t</u>ag
+### `s` <u>s</u>entence
+### `p` <u>p</u>aragraph
+]
+---
+template: inverse
+# Delete
+## Some things have to go.
+.left-col[
+### `dw` <u>d</u>elete <u>w</u>ord
+### `d2w` <u>d</u>elete two <u>w</u>ords
+### `3d` three times <u>d</u>elete
+]
+--
+.right-col[
+### `dit` <u>d</u>elete <u>i</u>nside html <u>tag</u>
+### `dat` <u>d</u>elete <u>a</u>round html <u>tag</u>
+### `d2aw` <u>d</u>elete twice <u>a</u>round <u>w</u>ord
+### `dap` <u>d</u>elete <u>a</u>round <u>p</u>aragraph
+]
+---
+template: level
+# LEVEL 4
+## "Rampage"
+---
+# This works for all operations!
+## Change, delete, visual, etc.
+## 🤯
+.left[
+### `d3ap` <u>d</u>elete thrice <u>a</u>round <u>p</u>aragaph
+### `ci"` <u>c</u>hange <u>i</u>nside " "
+### `di(` <u>d</u>elete <u>i</u>nside ( )
+### `c2a{` <u>c</u>hange two levels <u>a</u>round { { } }
+### `v2ap` <u>v</u>isual twice <u>a</u>round <u>p</u>aragraph
+]
+---
+template: level
+# LEVEL 5
+## "Dominating"
+---
+# Visual
+## Try moving around after pressing these
+.left-col[
+### `v` visual mode
+### `V` linewise visual mode
+### `Ctrl-v` blockwise visual mode
+### `y` while in visual, to yank what you have selected
+]
+--
+.right-col[
+### `c` <u>c</u>hange to remove it and go to insert mode
+### `A` <u>a</u>ppend text behind it
+### `I` <u>i</u>nsert text before it
+]
+---
+# Jump around
+## To a character on the same line
+.left[
+### `f<char>` <u>f</u>orward to char
+### `F<char>` backward to char
+### `t<char>` move un<u>t</u>il the char
+### `T<char>` move backward un<u>t</u>il the char
+]
+---
+# Join lines
+## That really should be one
+.left[
+### `J` pull the next line up to join it with the current one
+### `3J` join the three following lines
+### `va{J` join a json object to a single line
+]
+---
+template: level
+# LEVEL 6
+## "Unstoppable"
+---
+# Repeat previous edit
+## Dude, I just did it!
+.left[
+### `/let` search for occurrences of "let"
+### `ciwconst` <em>change inner word</em> to "const" (i.e. an edit)
+### `<esc>` escape back to normal mode
+### `n` go to <u>n</u>ext occurrence
+### `.` repeat the previous edit
+### `n` go to <u>n</u>ext occurrence
+### `.` repeat the previous edit
+...
+]
+---
+template: level
+# LEVEL 7
+## "Godlike"
+---
+# Registers
+## All keys can be registers.
+.left[
+### `:registers` browse registers
+### `"<char>` the name of a register
+### `"ky` Yank line to register `k`
+### `"kp`
+]
+---
+# Macros
+## There's a lot of keys, record them would be useful.
+TODO
+---
+template: level
+# LEVEL 981273478124
+## "Unstoppable, godlike, full on neckbeard mode"
+---
+# Make camelCase text snake_case
+## 🐍
+### `:s/\([a-z0-9]\)\([A-Z0-9]\)/\1_\l\2/g`
+---
+# Delete matching lines globally
+## E.g. delete merge markers when you wanna keep it all
+### `:g/^\(<<<\|===\|>>>\)/d`
+<br>
+.left-col[
+<pre >
+<<<<<<< HEAD:file.txt
+A
+=======
+B
+>>>>>>> 31fd307b:file.txt
+<<<<<<< HEAD:file.txt
+AA
+=======
+BB
+>>>>>>> 1df20793:file.txt
+</pre>
+]
+.right-col[
+<pre>
+A
+B
+AA
+BB
+</pre>
+]
+---
+# Keep useful commands in registers
+## Run them like you run macros!
+.left[
+### Type some useful text in a buffer, like `:w wooot`
+### Select it with `V`
+### Yank it to a register with, like `"ky`
+### Type `:registers` or `:reg` to see it in the list of registers
+### Run it with `@k`
+]
+---
+# Special chars
+## ..almost like in regex
+.left[
+### `^` beginning of line
+### `$` end of line
+]</textarea>
+    <script src="remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create({ highlightStyle: 'monokai' });
+    </script>
+  </body>
+</html>
