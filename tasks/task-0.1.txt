@@ -1,0 +1,5 @@
+Go on then, quit!
+
+:q! quit buffer, without saving.
+:qa! quit all buffers, discarding changes.
+:wq! write file and quit.

@@ -1,0 +1,20 @@
+1. Delete the occurence of "garbage" from the first paragraph.
+2. Delete the two occurences of "garbage" from the second paragraph.
+3. Delete the contents of the section tag
+4. Delete the div and it's "garbage" content from the third paragraph.
+
+garbage This is
+
+garbage garbage <b>the real</b>
+
+<section>
+  <script href="garbage.js></script>
+  <link rel="stylesheet" type="text/css" href="garbage.css">
+</section>
+
+<div>
+garbage
+garbage
+garbage
+</div>
+content!

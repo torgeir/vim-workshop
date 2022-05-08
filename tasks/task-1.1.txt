@@ -1,0 +1,8 @@
+1. Move down to the text without pressing j more than once in a row.
+2. Fill in the placeholders. Press esc to go to normal mode.
+3. Move to the start of the line 'The end'. Type a ! after it using A.
+4. Insert a line with some text above it without using pressing k.
+
+My first name is <name>, and I come from <city>.
+
+The end

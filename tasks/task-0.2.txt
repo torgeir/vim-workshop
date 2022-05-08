@@ -1,0 +1,6 @@
+Try opening help for how to quit!
+
+<esc>
+:h[elp] <subject>
+
+Then quit help. How would you do it?

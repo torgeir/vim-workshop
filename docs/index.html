@@ -42,7 +42,7 @@ name: inverse
 layout: true
 class: middle, center, inverse
 ---
-# A guide to VIM mastery!
+# A guide to VIM!
 .hl[
 ## [torgeir/vim-workshop](//github.com/torgeir/vim-workshop)
 ]
@@ -58,9 +58,13 @@ class: middle, center, inverse
 ---
 template: level
 # LEVEL 0
-## "Qualifiers"
+## "Oh'noes!"
 ---
 # Quit
+<style>
+.task { position: absolute; top: 1rem; right: 1rem; }
+</style>
+.task[[Task 0.1](https://github.dev/torgeir/vim-workshop/tasks/task-0.1.txt)]
 .left[
 ## Hammer esc to escape everything you got going on..
 ## `<esc><esc><es..`
@@ -71,15 +75,16 @@ template: level
 ]
 ---
 # Help
+.task[[Task 0.2](https://github.dev/torgeir/vim-workshop/tasks/task-0.2.txt)]
 .left[
 ## An actually useful manual!
 ## `:h[elp] <subject>`
 <br>
 ## Try these:
-### `:help :qa!`
-### `:hel :qa!`
-### `:he :qa!`
-### `:h :qa!`
+### `:help :qa`
+### `:hel :qa`
+### `:he :qa`
+### `:h :qa`
 ]
 ---
 # Now, open it again..
@@ -107,6 +112,7 @@ template: level
 ---
 # Move the cursor
 ## More than two of these in a row is cheating!
+.task[[Task 1.0](https://github.dev/torgeir/vim-workshop/tasks/task-1.0.txt)]
 .left-col[
 ### `h` left
 ### `j` down
@@ -122,6 +128,7 @@ template: level
 ]
 ---
 # How do I type actual text??
+.task[[Task 1.1](https://github.dev/torgeir/vim-workshop/tasks/task-1.1.txt)]
 ## And not just delete stuff. When in normal mode..
 .left-col[
 ### `i` <u>i</u>nsert mode before marker
@@ -140,6 +147,7 @@ template: level
 - Or variants of a command
 ---
 # Write
+.task[[Task 1.2](https://github.dev/torgeir/vim-workshop/tasks/task-1.2.txt)]
 ## Write contents of the buffer to a file.
 .left[
 ### `:w[rite] [file]` Write to the given file
@@ -149,9 +157,10 @@ template: level
 ---
 template: level
 # LEVEL 2
-## "I got this."
+## "I've got this."
 ---
 # Search
+.task[[Task 2.0](https://github.dev/torgeir/vim-workshop/tasks/task-2.0.txt)]
 .left-col[
 ## `/` search forward
 ## `?` search backward
@@ -165,6 +174,7 @@ template: level
 - Works on google
 ---
 # Yank, paste and delete
+.task[[Task 2.1](https://github.dev/torgeir/vim-workshop/tasks/task-2.1.html)]
 ## Like it was ctrl+c, ctrl+v..
 .left[
 ### `yy` yank aka copy the line
@@ -173,17 +183,20 @@ template: level
 ]
 ---
 # Jump
+.task[[Task 2.2](https://github.dev/torgeir/vim-workshop/tasks/task-2.2.html)]
 .left[
 ### `gg` <u>g</u>o to the beginning of the file
 ### `2gg` <u>g</u>o to line 2
 ### `G` <u>g</u>o to end of file
+### `0` or `^` go to the start of the line
+### `$` go to the end of the line
 ]
 ???
-Repeated commands indiate movement is expected
+Repeated commands indicate that movement is expected
 ---
 template: level
 # LEVEL 3
-## "How'd you do that?!"
+## "Wait - how'd you do that?!"
 ---
 # Commands
 ## Are built with these building blocks.
@@ -194,6 +207,7 @@ template: level
 ## `<text object>` or `<motion>`
 ]
 ---
+class: center, inverse
 # Text Objects
 .left[
 ## Surroundings
@@ -209,13 +223,13 @@ template: level
 ### `p` <u>p</u>aragraph
 ]
 ---
-template: inverse
 # Delete
+.task[[Task 3.0](https://github.dev/torgeir/vim-workshop/tasks/task-3.0.txt)]
 ## Some things have to go.
 .left-col[
 ### `dw` <u>d</u>elete <u>w</u>ord
 ### `d2w` <u>d</u>elete two <u>w</u>ords
-### `3d` three times <u>d</u>elete
+### `2dj` two times <u>d</u>elete down
 ]
 --
 .right-col[
@@ -230,6 +244,7 @@ template: level
 ## "Rampage"
 ---
 # This works for all operations!
+.task[[Task 4.0](https://github.dev/torgeir/vim-workshop/tasks/task-4.0.txt)]
 ## Change, delete, visual, etc.
 ## 🤯
 .left[
@@ -245,6 +260,7 @@ template: level
 ## "Dominating"
 ---
 # Visual
+.task[[Task 5.0](https://github.dev/torgeir/vim-workshop/tasks/task-5.0.txt)]
 ## Try moving around after pressing these
 .left-col[
 ### `v` visual mode
@@ -260,6 +276,7 @@ template: level
 ]
 ---
 # Jump around
+.task[[Task 5.1](https://github.dev/torgeir/vim-workshop/tasks/task-5.1.txt)]
 ## To a character on the same line
 .left[
 ### `f<char>` <u>f</u>orward to char
@@ -269,6 +286,7 @@ template: level
 ]
 ---
 # Join lines
+.task[[Task 5.2](https://github.dev/torgeir/vim-workshop/tasks/task-5.2.txt)]
 ## That really should be one
 .left[
 ### `J` pull the next line up to join it with the current one
@@ -281,6 +299,7 @@ template: level
 ## "Unstoppable"
 ---
 # Repeat previous edit
+.task[[Task 6.0](https://github.dev/torgeir/vim-workshop/tasks/task-6.0.txt)]
 ## Dude, I just did it!
 .left[
 ### `/let` search for occurrences of "let"
@@ -298,21 +317,54 @@ template: level
 ## "Godlike"
 ---
 # Registers
+.task[[Task 7.0](https://github.dev/torgeir/vim-workshop/tasks/task-7.0.txt)]
 ## All keys can be registers.
 .left[
 ### `:registers` browse registers
 ### `"<char>` the name of a register
-### `"ky` Yank line to register `k`
+### `"ky` yank line to register `k`
 ### `"kp`
 ]
 ---
-# Macros
-## There's a lot of keys, record them would be useful.
-TODO
+# Keep useful commands in registers
+.task[[Task 7.1](https://github.dev/torgeir/vim-workshop/tasks/task-7.1.txt)]
+## Run what's in them as a command!
+.left[
+### Type some useful text in a buffer, like `:w wooot`
+### Select it with `V`
+### Yank it to a register with, e.g. like `"ky`
+### Type `:registers` or `:reg` to see it in the list of registers
+### Run it with `@k`
+]
+---
 ---
 template: level
-# LEVEL 981273478124
-## "Unstoppable, godlike, full on neckbeard mode"
+# LEVEL 1337
+## "Unstoppable, full on neckbeard mode"
+---
+# Macros
+.task[[Task 8.0](https://github.dev/torgeir/vim-workshop/tasks/task-8.0.txt)]
+## That's a lot of keys. Recording them would be useful.
+.left[
+### `q<char>` start recording macro to register `<char>`
+### ...press the keys to record...
+### ...press `<esc>` to stop recording
+### `@<char>` to play it back
+### `@@` repeat previously played back macro
+]
+---
+# Edit macros
+.task[[Task 8.1](https://github.dev/torgeir/vim-workshop/tasks/task-8.1.txt)]
+## Even neckbeards get it wrong.
+.left[
+### `"qp` to paste the previous macro you saved to `q`
+### Edit it like you please
+### Go to the beginning of the line with `0'`
+### Delete it to a register, e.g. with `"wD` (this ensures you skip the trailing newline)
+### Play it back with `@w`
+]
+---
+# Stuff that didn't make it
 ---
 # Make camelCase text snake_case
 ## 🐍
@@ -343,16 +395,6 @@ B
 AA
 BB
 </pre>
-]
----
-# Keep useful commands in registers
-## Run them like you run macros!
-.left[
-### Type some useful text in a buffer, like `:w wooot`
-### Select it with `V`
-### Yank it to a register with, like `"ky`
-### Type `:registers` or `:reg` to see it in the list of registers
-### Run it with `@k`
 ]
 ---
 # Special chars

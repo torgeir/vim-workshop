@@ -1,0 +1,7 @@
+1. Navigate to :w wooot below
+2. Select it with v2e
+3. Yank it to a register, e.g. like "ky
+
+:w wooot
+
+This content will be saved to the file wooot

@@ -1,0 +1,23 @@
+(this only works in vim, not with the github.dev vscode plugin..)
+
+1. Paste the previous macro with "qp
+2. Search for let and change it to const
+3. Go to the beginning of the line with 0
+4. Delete the end of line with D, putting it in register "w
+5. Run the macro in register "w with @w on the code below
+
+function one() {
+  return { something: 1 };
+}
+function two() {
+  return { else: 2 };
+}
+function three() {
+  return { and: 3 };
+}
+function four() {
+  return { even: 4 };
+}
+function five() {
+  return { moar: 5 };
+}
