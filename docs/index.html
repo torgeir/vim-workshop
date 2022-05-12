@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="keywords" content="vim,course,kurs,markdown,slideshow,presentation" />
-    <meta name="description" content="Et VIM-kurs" />
-    <title>VIM-kurs</title>
+    <meta name="description" content="A vim workshop" />
+    <title>vim-workshop</title>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
@@ -50,15 +50,31 @@ class: middle, center, inverse
 # Agenda
 ## The best way to learn vim is to use vim.. a lot.
 .left[
-### Highly interactive workshop
-### Most tasks work in online vscode from github - type `.`
-### All tasks work in a terminal vim
-### `git clone git@github.com:torgeir/vim-workshop.git && vim .`
+### - Interactive workshop
+### - All tasks work in a terminal vim
+### `git clone git@github.com:torgeir/vim-workshop.git && cd vim-workshop && vim tasks`
+### - Most tasks work in online vscode from Github - type `.`
+]
+???
+Until it becomes muscle memory
+Believe it or not, it does.
+---
+# Why VIM?
+## It might be for you, if you enjoy..
+.left[
+### - An omnipresent editor, terminal or GUI
+### - Not using the mouse
+### - _A LOT_ of keyboard shortcuts
+### - Automating advanced text operations
+### - The linux philosophy
+### - Fascination of goofing around with old text editors
+### - A steep learning curve
+### - Understanding there are actual reasons for the madness that is VIM
 ]
 ---
 template: level
 # LEVEL 0
-## "Oh'noes!"
+## "Oh'noes!" 😱
 ---
 # Quit
 <style>
@@ -79,12 +95,18 @@ template: level
 .left[
 ## An actually useful manual!
 ## `:h[elp] <subject>`
+]
 <br>
-## Try these:
+.left-col[
+## Try these
 ### `:help :qa`
 ### `:hel :qa`
 ### `:he :qa`
 ### `:h :qa`
+]
+.right-col[
+## Or the program for more practice
+### `vimtutor`
 ]
 ---
 # Now, open it again..
@@ -113,12 +135,11 @@ template: level
 ### `k` up
 ### `l` right
 ]
---
 .right-col[
-### `3h` three columns left
-### `3k` three rows up
-### `3j` three rows down
-### `3l` three columns right
+### `w` next <u>w</u>ord
+### `b` <u>b</u>ack word
+### `3j` three times down
+### `3w` three times next word
 ]
 ???
 :set relativenumber
@@ -131,7 +152,6 @@ template: level
 ### `a` insert mode <u>a</u>fter marker
 ### `<esc>` <u>esc</u>ape back to the safe haven that is normal mode!
 ]
---
 .right-col[
 ### `I` insert mode at start of line
 ### `A` insert mode at end of line
@@ -153,7 +173,7 @@ template: level
 ---
 template: level
 # LEVEL 2
-## "I've got this."
+## "I can do this." 😎
 ---
 # Search
 .task[[Task 2.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.0.txt)]
@@ -163,20 +183,26 @@ template: level
 ]
 .right-col[
 ## `n` skip to <u>n</u>ext match
-## `p` skip to <u>p</u>revious match
+## `N` skip to previous match
 ]
 ???
-- Works on github
-- Works on google
+- / works on github
+- / works on google
+- / works on gcp
 ---
 # Yank, paste and delete
-.task[[Task 2.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.1.html)]
+.task[[Task 2.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.1.txt)]
 ## Like it was ctrl+c, ctrl+v..
-.left[
-### `yy` yank aka copy the line
-### `dd` delete the line
-### `p` paste line
+.left-col[
+### `yy` <u>y</u>ank aka copy the line
+### `dd` <u>d</u>elete the line
 ]
+.right-col[
+### `p` <u>p</u>aste line
+### `P` <u>p</u>aste above line
+]
+???
+/^Lorem
 ---
 # Jump
 .task[[Task 2.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.2.html)]
@@ -188,11 +214,12 @@ template: level
 ### `$` go to the end of the line
 ]
 ???
-Repeated commands indicate that movement is expected
+- Repeated commands indicate that movement is expected
+- Variants of commands often have a capital Letter
 ---
 template: level
 # LEVEL 3
-## "Wait - how'd you do that?!"
+## "Wait - how'd you do that?!" 🤯
 ---
 # Commands
 ## Are built with these building blocks.
@@ -237,7 +264,7 @@ class: center, inverse
 ---
 template: level
 # LEVEL 4
-## "Rampage"
+## "Rampage."
 ---
 # This works for all operations!
 .task[[Task 4.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-4.0.txt)]
@@ -253,11 +280,11 @@ template: level
 ---
 template: level
 # LEVEL 5
-## "Dominating"
+## "Dominating."
 ---
 # Visual
 .task[[Task 5.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-5.0.txt)]
-## Try moving around after pressing these
+## Try moving around after pressing these.
 .left-col[
 ### `v` visual mode
 ### `V` linewise visual mode
@@ -267,23 +294,23 @@ template: level
 --
 .right-col[
 ### `c` <u>c</u>hange to remove it and go to insert mode
-### `A` <u>a</u>ppend text behind it
-### `I` <u>i</u>nsert text before it
+### `A` <u>a</u>ppend text behind selection
+### `I` <u>i</u>nsert text before selection
 ]
 ---
 # Jump around
 .task[[Task 5.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-5.1.txt)]
-## To a character on the same line
+## To or until a character on the same line.
 .left[
 ### `f<char>` <u>f</u>orward to char
-### `F<char>` backward to char
+### `F<char>` backward (opposite of <u>F</u>orward) to char
 ### `t<char>` move un<u>t</u>il the char
 ### `T<char>` move backward un<u>t</u>il the char
 ]
 ---
 # Join lines
 .task[[Task 5.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-5.2.txt)]
-## That really should be one
+## That really should be one.
 .left[
 ### `J` pull the next line up to join it with the current one
 ### `3J` join the three following lines
@@ -292,7 +319,7 @@ template: level
 ---
 template: level
 # LEVEL 6
-## "Unstoppable"
+## "Unstoppable."
 ---
 # Repeat previous edit
 .task[[Task 6.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-6.0.txt)]
@@ -310,7 +337,7 @@ template: level
 ---
 template: level
 # LEVEL 7
-## "Godlike"
+## "Godlike."
 ---
 # Registers
 .task[[Task 7.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-7.0.txt)]
@@ -332,7 +359,6 @@ template: level
 ### Type `:registers` or `:reg` to see it in the list of registers
 ### Run it with `@k`
 ]
----
 ---
 template: level
 # LEVEL 8

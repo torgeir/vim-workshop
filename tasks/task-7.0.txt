@@ -1,12 +1,12 @@
 1. Delete the first paragraph.
 2. Delete the second paragraph.
 3. Delete the third paragraph.
-4. Delete the fourth paragraph..
+4. Delete the fourth paragraph.
 5. Now bring back the first paragraph.
-6. Delete "Afterwards" to register k.
-7. Move to the end of the line and paste it.
+6. Delete it to register k.
+7. Paste it from register k.
 
-Afterwards you will change your mind.
+Afterwards you will change your mind
 
 Delete this paragraph.
 

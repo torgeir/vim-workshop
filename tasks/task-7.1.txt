@@ -1,6 +1,8 @@
 1. Navigate to :w wooot below
 2. Select it with v2e
 3. Yank it to a register, e.g. like "ky
+4. Type `:registers` or `:reg` to see it in the list of registers
+5. Run it with `@k`
 
 :w wooot
 

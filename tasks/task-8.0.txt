@@ -1,29 +1,46 @@
-1. Start recording a macro to the register q.
+0. Go to the blank line below this section
+1. Start recording a macro to the register q
 2. Search for the next function
 3. Navigate to the key of the returned object of the function
-4. Yank it to a register for afterwards, e.g. "k
+4. Yank it to a register for afterwards, e.g. "kyiw
 5. Navigate to the function value
-6. Yank it to another register for afterwards, e.g. "l
+6. Yank it to another register for afterwards, e.g. "lyiw
 7. Select the function with visual mode
-8. Replace it with "let"
+8. Replace it with the text"let"
 9. Paste from the register in 4.
 10. Go to insert mode and type an =
 11. Paste from the register in 6.
-12. Navigate to the start of the line, hit esc.
+12. Navigate to the start of the line, hit <esc>.
 13. Now replay what you did with @q
+14. And again with @@
 
-function one() {
+function one () {
   return { something: 1 };
 }
-function two() {
+function two () {
   return { else: 2 };
 }
-function three() {
+function three () {
   return { and: 3 };
 }
-function four() {
+function four () {
   return { even: 4 };
 }
-function five() {
+function five () {
   return { moar: 5 };
+}
+function six () {
+  return { amagawd: 6 };
+}
+function seven () {
+  return { it: 7 };
+}
+function eight () {
+  return { never: 8 };
+}
+function nine () {
+  return { stops: 9 };
+}
+function ten () {
+  return { plzwegetit: 10 };
 }

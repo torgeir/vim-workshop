@@ -6,18 +6,33 @@
 4. Delete the end of line with D, putting it in register "w
 5. Run the macro in register "w with @w on the code below
 
-function one() {
+function one () {
   return { something: 1 };
 }
-function two() {
+function two () {
   return { else: 2 };
 }
-function three() {
+function three () {
   return { and: 3 };
 }
-function four() {
+function four () {
   return { even: 4 };
 }
-function five() {
+function five () {
   return { moar: 5 };
+}
+function six () {
+  return { amagawd: 6 };
+}
+function seven () {
+  return { it: 7 };
+}
+function eight () {
+  return { never: 8 };
+}
+function nine () {
+  return { stops: 9 };
+}
+function ten () {
+  return { plzwegetit: 10 };
 }

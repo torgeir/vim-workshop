@@ -1,71 +1,19 @@
 1. Search for {.
 2. Join the json object to a single line.
-3. Repeat it with n . n . n . and so on
+3. Search, repeat, search, repeat.. it for the rest of the objects
 
 some text
 
-{
-    "node": {
-        "from": "2019-10-01T12:00:00+02:00",
-        "to": "2019-10-01T13:00:00+02:00",
-        "total": {
-            "coverage": {
-                "percentage": 100
-            },
-            "volumeNumbers": {
-                "volume": 1568
-            }
-        }
-    }
-}
+{"node": {"from": "2019-10-01T12:00:00+02:00", "to": "2019-10-01T13:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1568}}}}
 
 more words
 
-{
-    "node": {
-        "from": "2019-10-01T13:00:00+02:00",
-        "to": "2019-10-01T14:00:00+02:00",
-        "total": {
-            "coverage": {
-                "percentage": 100
-            },
-            "volumeNumbers": {
-                "volume": 1584
-            }
-        }
-    }
-}
+{"node": {"from": "2019-10-01T13:00:00+02:00", "to": "2019-10-01T14:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1584}}}}
 
 without meaning
 
-{
-    "node": {
-        "from": "2019-10-01T14:00:00+02:00",
-        "to": "2019-10-01T15:00:00+02:00",
-        "total": {
-            "coverage": {
-                "percentage": 100
-            },
-            "volumeNumbers": {
-                "volume": 1821
-            }
-        }
-    }
-}
+{"node": {"from": "2019-10-01T14:00:00+02:00", "to": "2019-10-01T15:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1821}}}}
 
 even moar
 
-{
-    "node": {
-        "from": "2019-10-01T15:00:00+02:00",
-        "to": "2019-10-01T16:00:00+02:00",
-        "total": {
-            "coverage": {
-                "percentage": 100
-            },
-            "volumeNumbers": {
-                "volume": 1774
-            }
-        }
-    }
-}
+{"node": {"from": "2019-10-01T15:00:00+02:00", "to": "2019-10-01T16:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1774}}}}
