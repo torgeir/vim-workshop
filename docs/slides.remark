@@ -303,8 +303,9 @@ template: level
 ---
 ---
 template: level
-# LEVEL 1337
+# LEVEL 8
 ## "Unstoppable, full on neckbeard mode"
+<img src="neckbeard.png"/>
 ---
 # Macros
 .task[[Task 8.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-8.0.txt)]
