@@ -11,12 +11,12 @@ class: middle, center, inverse
 ## [torgeir/vim-workshop](//github.com/torgeir/vim-workshop)
 ]
 ---
-# Setup
+# Agenda
+## The best way to learn vim is to use vim.. a lot.
 .left[
-## If on github
-### Type `.`
-<br>
-## If in a terminal
+### Highly interactive workshop
+### Most tasks work in online vscode from github - type `.`
+### All tasks work in a terminal vim
 ### `git clone git@github.com:torgeir/vim-workshop.git && vim .`
 ]
 ---
