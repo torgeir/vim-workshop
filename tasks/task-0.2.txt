@@ -1,3 +1,4 @@
+(only in vim)
 Try opening help for how to quit!
 
 <esc>

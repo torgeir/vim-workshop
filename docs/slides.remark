@@ -39,7 +39,7 @@ template: level
 ]
 ---
 # Help
-.task[[Task 0.2 (only native)](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-0.2.txt)]
+.task[[Task 0.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-0.2.txt)]
 .left[
 ## An actually useful manual!
 ## `:h[elp] <subject>`
@@ -55,7 +55,7 @@ template: level
 ---
 template: level
 # LEVEL 1
-## "Look ma', I can VIM"
+## "Look ma', I can VIM" 👶
 ---
 # Modal editor
 ## Different modes do different things!
@@ -84,6 +84,8 @@ template: level
 ### `3j` three rows down
 ### `3l` three columns right
 ]
+???
+:set relativenumber
 ---
 # How do I type actual text??
 .task[[Task 1.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-1.1.txt)]

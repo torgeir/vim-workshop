@@ -16,3 +16,5 @@ Now move down here. And then over here |
 
 
 And here |. And back to the top of the file.
+
+try :set relativenumber
