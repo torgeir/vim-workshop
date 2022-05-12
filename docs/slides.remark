@@ -39,7 +39,7 @@ template: level
 ]
 ---
 # Help
-.task[[Task 0.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-0.2.txt)]
+.task[[Task 0.2 (only native)](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-0.2.txt)]
 .left[
 ## An actually useful manual!
 ## `:h[elp] <subject>`
