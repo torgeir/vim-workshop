@@ -52,12 +52,6 @@ template: level
 ]
 ---
 # Now, open it again..
-.left[
-## Depending on what you did, with
-### `vim README.md`
-## or
-### `:e README.md`
-]
 ---
 template: level
 # LEVEL 1
