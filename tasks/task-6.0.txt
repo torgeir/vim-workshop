@@ -4,16 +4,68 @@
 
 some text
 
-{"node": {"from": "2019-10-01T12:00:00+02:00", "to": "2019-10-01T13:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1568}}}}
+{
+  "node": {
+    "total": {
+      "volumeNumbers": {
+        "volume": 1568
+      },
+      "coverage": {
+        "percentage": 100
+      }
+    },
+    "to": "2019-10-01T13:00:00+02:00",
+    "from": "2019-10-01T12:00:00+02:00"
+  }
+}
 
 more words
 
-{"node": {"from": "2019-10-01T13:00:00+02:00", "to": "2019-10-01T14:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1584}}}}
+{
+  "node": {
+    "total": {
+      "volumeNumbers": {
+        "volume": 1584
+      },
+      "coverage": {
+        "percentage": 100
+      }
+    },
+    "to": "2019-10-01T14:00:00+02:00",
+    "from": "2019-10-01T13:00:00+02:00"
+  }
+}
 
 without meaning
 
-{"node": {"from": "2019-10-01T14:00:00+02:00", "to": "2019-10-01T15:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1821}}}}
+{
+  "node": {
+    "total": {
+      "volumeNumbers": {
+        "volume": 1821
+      },
+      "coverage": {
+        "percentage": 100
+      }
+    },
+    "to": "2019-10-01T15:00:00+02:00",
+    "from": "2019-10-01T14:00:00+02:00"
+  }
+}
 
 even moar
 
-{"node": {"from": "2019-10-01T15:00:00+02:00", "to": "2019-10-01T16:00:00+02:00", "total": {"coverage": {"percentage": 100}, "volumeNumbers": {"volume": 1774}}}}
+{
+  "node": {
+    "total": {
+      "volumeNumbers": {
+        "volume": 1774
+      },
+      "coverage": {
+        "percentage": 100
+      }
+    },
+    "to": "2019-10-01T16:00:00+02:00",
+    "from": "2019-10-01T15:00:00+02:00"
+  }
+}

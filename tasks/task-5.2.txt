@@ -1,4 +1,30 @@
-1. Join the lines of these json object so they occupy a single line each
+1. Join the lines of each paragraph to a single line
+2. Join the lines of the array so it occupies a single line
+3. Join the lines of each json object so they occupy a single line each
+
+First paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat.
+
+Second Paragraph: Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur.
+
+Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+["one", "two",
+"three"]
+
+[
+  1,
+  2, 3,
+  4, 5,
+  6,
+  7, 8, 9,
+
+  10
+]
 
 {
     "node": {

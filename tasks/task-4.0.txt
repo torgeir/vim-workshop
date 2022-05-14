@@ -1,10 +1,7 @@
-1. Place the cursor on the first paragraph and delete all three paragraphs with
-3 key presses.
+1. Place the cursor on the first paragraph and delete all three paragraphs with 4 key presses.
 2. Place the cursor on the variable and change the content of it to "VIM"
-3. Place the cursor on the line of the function that no longer needs its
-parameters and delete them
-4. Place the cursor on the placeholder inside the json structure and change the
-"and me" key's value to be 42 instead of the object.
+3. Place the cursor on the line of the function that no longer needs its parameters and delete them
+4. Place the cursor on the placeholder inside the json structure and change the "and me" key's value to be 42 instead of the object.
 
 Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one. Paragraph one.
 

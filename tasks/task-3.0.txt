@@ -1,11 +1,12 @@
 1. Delete the occurence of "garbage" from the first paragraph.
 2. Delete the two occurences of "garbage" from the second paragraph.
+3. Change "crap innards of a tag" to "real"
 3. Delete the contents of the section tag
 4. Delete the div and it's "garbage" content from the third paragraph.
 
 garbage This is
 
-garbage garbage <b>the real</b>
+garbage garbage <b>crap innards of a tag</b>
 
 <section>
   <script href="garbage.js></script>
@@ -16,5 +17,4 @@ garbage garbage <b>the real</b>
 garbage
 garbage
 garbage
-</div>
-content!
+</div>content!

@@ -1,9 +1,10 @@
 (this only works in vim, not with the github.dev vscode plugin..)
 
+0. Navigate to the empty line below
 1. Paste the previous macro with "qp
 2. Search for let and change it to const
 3. Go to the beginning of the line with 0
-4. Delete the end of line with D, putting it in register "w
+4. Delete to the end of line, putting it in register "wD
 5. Run the macro in register "w with @w on the code below
 
 function one () {

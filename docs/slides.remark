@@ -11,13 +11,18 @@ class: middle, center, inverse
 ## [torgeir/vim-workshop](//github.com/torgeir/vim-workshop)
 ]
 ---
+TODO startup
+---
 # Agenda
 ## The best way to learn vim is to use vim.. a lot.
-.left[
 ### - Interactive workshop
 ### - All tasks work in a terminal vim
-### `git clone git@github.com:torgeir/vim-workshop.git && cd vim-workshop && vim tasks`
-### - Most tasks work in online vscode from Github - type `.`
+```
+git clone git@github.com:torgeir/vim-workshop.git
+cd vim-workshop
+vim tasks
+```
+### - Most tasks work in online vscode from Github
 ]
 ???
 Until it becomes muscle memory
@@ -148,6 +153,8 @@ template: level
 .right-col[
 ## `n` skip to <u>n</u>ext match
 ## `N` skip to previous match
+<br>
+## `:noh[ighlight]` clear highlighted matches
 ]
 ???
 - / works on github
@@ -187,11 +194,16 @@ template: level
 ---
 # Commands
 ## Are built with these building blocks.
-.left[
-## `<operation>`
-## `<number-of-times>`
-## `<surrounding>`
-## `<text object>` or `<motion>`
+.left-col[
+### `<operation>`
+### `<number-of-times>`
+### `<surrounding>`
+### `<text object>` or `<motion>`
+]
+--
+.right-col[
+### `<number-of-times>`
+### `<operation>`
 ]
 ---
 class: center, inverse
@@ -217,6 +229,7 @@ class: center, inverse
 ### `dw` <u>d</u>elete <u>w</u>ord
 ### `d2w` <u>d</u>elete two <u>w</u>ords
 ### `2dj` two times <u>d</u>elete down
+### `D` <u>d</u>elete to end of line
 ]
 --
 .right-col[
@@ -224,6 +237,23 @@ class: center, inverse
 ### `dat` <u>d</u>elete <u>a</u>round html <u>tag</u>
 ### `d2aw` <u>d</u>elete twice <u>a</u>round <u>w</u>ord
 ### `dap` <u>d</u>elete <u>a</u>round <u>p</u>aragraph
+]
+---
+# Change
+.task[[Task 3.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-3.0.txt)]
+## Some things have to change, in insert mode.
+.left-col[
+### `cw` <u>c</u>ange <u>w</u>ord
+### `c2w` <u>c</u>ange two <u>w</u>ords
+### `cdj` two times <u>c</u>ange down
+### `C` <u>c</u>hange to end of line
+]
+--
+.right-col[
+### `ci[` <u>c</u>ange <u>i</u>nside html <u>tag</u>
+### `cat` <u>c</u>ange <u>a</u>round html <u>tag</u>
+### `c2aw` <u>c</u>ange twice <u>a</u>round <u>w</u>ord
+### `cap` <u>c</u>ange <u>a</u>round <u>p</u>aragraph
 ]
 ---
 template: level
@@ -278,7 +308,7 @@ template: level
 .left[
 ### `J` pull the next line up to join it with the current one
 ### `3J` join the three following lines
-### `va{J` join a json object to a single line
+### `va[J` join an array of values to a single line
 ]
 ---
 template: level

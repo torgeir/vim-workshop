@@ -1,8 +1,9 @@
 1. Navigate to :w wooot below
-2. Select it with v2e
+2. Select it with V
 3. Yank it to a register, e.g. like "ky
 4. Type `:registers` or `:reg` to see it in the list of registers
 5. Run it with `@k`
+6. Run :!ls verify a new file wooot was written
 
 :w wooot
 
