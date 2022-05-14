@@ -1,3 +1,5 @@
+(this only works in vim, not with the github.dev vscode plugin..)
+
 1. Record a macro that creates a file named Task x.txt for each list item
 2. Each task's file should contain the list item's contents
 Hints:

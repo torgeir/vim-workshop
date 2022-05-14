@@ -42,7 +42,7 @@ name: inverse
 layout: true
 class: middle, center, inverse
 ---
-# A guide to VIM!
+# A guide to Vim!
 .hl[
 ## [torgeir/vim-workshop](//github.com/torgeir/vim-workshop)
 ]
@@ -52,25 +52,37 @@ class: middle, center, inverse
 .left[
 ### - Interactive workshop
 ### - All tasks work in a terminal vim
-#### `git clone git@github.com:torgeir/vim-workshop.git && cd vim-workshop && vim tasks`
-### - Most tasks work in online vscode from Github
+### - Most tasks (not all) work with the vscode vim plugin
+]
+.left[
+```
+git clone git@github.com:torgeir/vim-workshop.git &&\
+ cd vim-workshop &&\
+ vim tasks
+```
+#### `:bd` closes current task buffer
 ]
 ???
 Until it becomes muscle memory
 Believe it or not, it does.
 ---
-# Why VIM?
+# Why Vim?
 ## It might be for you, if you enjoy..
+.right-col[
+<img src="learning-curve.jpg" />
+]
 .left[
-### - An omnipresent editor, terminal or GUI
+### - An omnipresent editor
+### - The linux philosophy
+### - A steep learning curve
 ### - Not using the mouse
 ### - _A LOT_ of keyboard shortcuts
 ### - Automating advanced text operations
-### - The linux philosophy
 ### - Fascination of goofing around with old text editors
-### - A steep learning curve
-### - Understanding there are actual reasons for the madness that is VIM
+### - Understanding there are actual reasons for the madness that is Vim
 ]
+???
+Maybe consider a vim-plugin?
 ---
 template: level
 # LEVEL 0
@@ -90,6 +102,8 @@ template: level
 ### `:wq!` <u>w</u>rite file and <u>q</u>uit.
 ]
 ---
+# Now, open it again..
+---
 # Help
 .task[[Task 0.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-0.2.txt)]
 .left[
@@ -105,26 +119,26 @@ template: level
 ### `:h :qa`
 ]
 .right-col[
-## Or the program for more practice
+## Or this program for more practice after the workshop
 ### `vimtutor`
 ]
 ---
-# Now, open it again..
----
 template: level
 # LEVEL 1
-## "Look ma', I can VIM" 👶
+## "Look ma', I can Vim" 👶
 ---
 # Modal editor
 ## Different modes do different things!
 .left[
 ## `normal`
-### - Text operations. Moving around.
+### - Text operations. Moving text around. Jumping around.
 ## `insert`
-### - Editing text.
+### - Inserting text.
 ## `visual`
-### - Highligting text. Operations on regions.
+### - Highligting text. Operations on selected regions.
 ]
+???
+Do one thing, do it well.
 ---
 # Move the cursor
 ## More than two of these in a row is cheating!
@@ -138,7 +152,15 @@ template: level
 .right-col[
 ### `w` next <u>w</u>ord
 ### `b` <u>b</u>ack word
-### `3j` three times down
+### `0` or `^` start of line
+### `$` end of line
+]
+---
+# Repeated command
+.task[[Task 1.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-1.0.txt)]
+## Cause pressing the same key over and over is tedious.
+.left[
+### `20j` twenty times down
 ### `3w` three times next word
 ]
 ???
@@ -146,7 +168,7 @@ template: level
 ---
 # How do I type actual text??
 .task[[Task 1.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-1.1.txt)]
-## And not just delete stuff. When in normal mode..
+## And not just mess stuff up.
 .left-col[
 ### `i` <u>i</u>nsert mode before marker
 ### `a` insert mode <u>a</u>fter marker
@@ -161,6 +183,7 @@ template: level
 ???
 - Large modifiers often do the opposite
 - Or variants of a command
+- Commands are given for normal mode
 ---
 # Write
 .task[[Task 1.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-1.2.txt)]
@@ -184,6 +207,8 @@ template: level
 .right-col[
 ## `n` skip to <u>n</u>ext match
 ## `N` skip to previous match
+<br>
+## `:noh[ighlight]` clear highlighted matches
 ]
 ???
 - / works on github
@@ -206,10 +231,12 @@ template: level
 ---
 # Jump
 .task[[Task 2.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.2.html)]
-.left[
+.left-col[
 ### `gg` <u>g</u>o to the beginning of the file
 ### `2gg` <u>g</u>o to line 2
 ### `G` <u>g</u>o to end of file
+]
+.right-col[
 ### `0` or `^` go to the start of the line
 ### `$` go to the end of the line
 ]
@@ -222,24 +249,24 @@ template: level
 ## "Wait - how'd you do that?!" 🤯
 ---
 # Commands
-## Are built with these building blocks.
+## Are built with these building blocks 🧩
 .left[
-## `<operation>`
-## `<number-of-times>`
-## `<surrounding>`
-## `<text object>` or `<motion>`
+### `<operation>`
+### `<number of times>` (optional)
+### `<surrounding>` (optional)
+### `<text object>` / `<motion>`
 ]
 ---
 class: center, inverse
-# Text Objects
+# Commands
 .left[
 ## Surroundings
-### `a` <u>a</u>round, e.g. including quotes or whitespace
-### `i` <u>i</u>nside, e.g. inside quotes or whitespace
+### `a` <u>a</u>round - <em><b>including</b></em> quotes, whitespace etc.
+### `i` <u>i</u>nside - <em><b>inside</b></em> quotes, whitespace etc.
 ]
 --
 .left-col[
-## Objects
+## Text Objects
 ### `w` <u>w</u>ord
 ### `t` <u>t</u>ag
 ### `s` <u>s</u>entence
@@ -253,6 +280,7 @@ class: center, inverse
 ### `dw` <u>d</u>elete <u>w</u>ord
 ### `d2w` <u>d</u>elete two <u>w</u>ords
 ### `2dj` two times <u>d</u>elete down
+### `D` <u>d</u>elete to end of line
 ]
 --
 .right-col[
@@ -261,6 +289,21 @@ class: center, inverse
 ### `d2aw` <u>d</u>elete twice <u>a</u>round <u>w</u>ord
 ### `dap` <u>d</u>elete <u>a</u>round <u>p</u>aragraph
 ]
+---
+# Change
+.task[[Task 3.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-3.0.txt)]
+## Some things have to change, so insert mode is useful.
+.left-col[
+### `cw` <u>c</u>hange <u>w</u>ord
+### `c2w` <u>c</u>hange two <u>w</u>ords
+### `2cj` two times <u>c</u>hange down
+### `C` <u>c</u>hange to end of line
+]
+<br>
+### `ci[` <u>c</u>hange <u>i</u>nside html <u>tag</u>
+### `cat` <u>c</u>hange <u>a</u>round html <u>tag</u>
+### `c2aw` <u>c</u>hange twice <u>a</u>round <u>w</u>ord
+### `cap` <u>c</u>hange <u>a</u>round <u>p</u>aragraph
 ---
 template: level
 # LEVEL 4
@@ -306,6 +349,7 @@ template: level
 ### `F<char>` backward (opposite of <u>F</u>orward) to char
 ### `t<char>` move un<u>t</u>il the char
 ### `T<char>` move backward un<u>t</u>il the char
+### Of course you can combine it with other operations, e.g. `df-`
 ]
 ---
 # Join lines
@@ -314,7 +358,7 @@ template: level
 .left[
 ### `J` pull the next line up to join it with the current one
 ### `3J` join the three following lines
-### `va{J` join a json object to a single line
+### `va(J` join lines wrapped in () to a single line
 ]
 ---
 template: level
@@ -334,6 +378,10 @@ template: level
 ### `.` repeat the previous edit
 ...
 ]
+???
+- Stuff you'd use multiple cursors for.
+- More useful if you e.g. forgot one.
+- Works on all edits and operations, e.g. like va(J
 ---
 template: level
 # LEVEL 7
@@ -387,44 +435,15 @@ template: level
 ### Play it back with `@w`
 ]
 ---
-# Stuff that didn't make it
----
-# Make camelCase text snake_case
-## 🐍
-### `:s/\([a-z0-9]\)\([A-Z0-9]\)/\1_\l\2/g`
----
-# Delete matching lines globally
-## E.g. delete merge markers when you wanna keep it all
-### `:g/^\(<<<\|===\|>>>\)/d`
-<br>
-.left-col[
-<pre >
-<<<<<<< HEAD:file.txt
-A
-=======
-B
->>>>>>> 31fd307b:file.txt
-<<<<<<< HEAD:file.txt
-AA
-=======
-BB
->>>>>>> 1df20793:file.txt
-</pre>
-]
-.right-col[
-<pre>
-A
-B
-AA
-BB
-</pre>
-]
----
-# Special chars
-## ..almost like in regex
+# Advanced macros
+.task[[Task 8.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-8.2.txt)]
+## Macros work with ~everything.
 .left[
-### `^` beginning of line
-### `$` end of line
+### Window movement
+### Opening and closing buffers
+### Writing to new files
+### Operations on registers
+### ++
 ]</textarea>
     <script src="remark-latest.min.js"></script>
     <script>

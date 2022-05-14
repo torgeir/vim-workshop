@@ -1,3 +1,4 @@
-(only in vim)
+(this only works in vim, not with the github.dev vscode plugin..)
+
 1. Change this file and write it.
 2. Now save it again with another name.
