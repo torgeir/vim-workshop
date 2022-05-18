@@ -27,8 +27,8 @@ git clone git@github.com:torgeir/vim-workshop.git &&\
 #### `:bd` closes current task buffer
 ]
 ???
-Until it becomes muscle memory
-Believe it or not, it does.
+- Til det blir muskelminne
+- Tro det eller ei, det gjør det faktisk etter hvert.
 ---
 # Why Vim?
 ## It might be for you, if you enjoy..
@@ -46,7 +46,14 @@ Believe it or not, it does.
 ### - Understanding there are actual reasons for the madness that is Vim
 ]
 ???
-Maybe consider a vim-plugin?
+- Ikke til å legge skjul på, ikke for alle synes det er en ålreit måte å tenke på
+- Tålt tidens tann
+- Vise frem, gjennom en del oppgaver, ting man kan gjøre med en helt plain vim
+- Prøve å vise frem at det faktisk fins noe logikk i galskapen
+- Usikker selv på om jeg ville begynt med plain vim idag når det finnes så mange
+  gode alternativer, som feks vscode
+- Fortsatt mye nyttig å dra på fra vim-plugins mtp. transformering av tekst
+- Lite innhold her som ikke er keyboard shortcuts - så hold deg fast
 ---
 template: level
 # LEVEL 0
@@ -83,7 +90,7 @@ template: level
 ### `:h :qa`
 ]
 .right-col[
-## Or this program for more practice after the workshop
+## Or this program for more practice after the workshop..
 ### `vimtutor`
 ]
 ---
@@ -102,7 +109,15 @@ template: level
 ### - Highligting text. Operations on selected regions.
 ]
 ???
-Do one thing, do it well.
+- Gjør en ting, gjør det godt.
+- Én modus for navigering, én for insertion, en for visual.
+- Kan spørre seg om det er godt eller ikke??
+- Det er i alle fall sånn det blir gjort.
+- Normal mode - Befinner seg størsteparten av titen. En modus for å operere på tekst flytte seg rundt.
+- Risikerer rare blikk om du feks navigerer masse rundt med piltaster i insert mode
+- For det bør man gjøre i normal mode
+- Ordentlige vimmere unbinder piltastene sånn at de ikke virker for å få det i fingerene
+
 ---
 # Move the cursor
 ## More than two of these in a row is cheating!
@@ -119,6 +134,13 @@ Do one thing, do it well.
 ### `0` or `^` start of line
 ### `$` end of line
 ]
+--
+<div style="position: relative">
+  <img
+  src="https://hackaday.com/wp-content/uploads/2014/02/adm3a.jpg?resize=701,625"
+  style="position: absolute; top: -130px; left: 0px; clip: rect(400px, 800px, 1200px, 0) "/>
+</div>
+.right[Source: Hackaday.com]
 ---
 # Repeated command
 .task[[Task 1.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-1.0.txt)]
@@ -145,11 +167,11 @@ Do one thing, do it well.
 ### `O` open line above
 ]
 ???
-- Large modifiers often do the opposite
-- Or variants of a command
-- Commands are given for normal mode
+- Må kunne skrive tekst også
+- Stor bokstav gjør ofte en variasjon av den opprinnelige
+- Eller det motsatte av de
 ---
-# Write
+# And save stuff??
 .task[[Task 1.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-1.2.txt)]
 ## Write contents of the buffer to a file.
 .left[
@@ -157,6 +179,9 @@ Do one thing, do it well.
 ### `:w [file]` The same
 ### `:w` Write to the current file
 ]
+???
+- Må kunne lagre tekst også
+- Dette kan dere, :wq
 ---
 template: level
 # LEVEL 2
@@ -175,9 +200,8 @@ template: level
 ## `:noh[ighlight]` clear highlighted matches
 ]
 ???
-- / works on github
-- / works on google
-- / works on gcp
+- Iblant er det klønete å telle ord, så da kan du heller søke
+- / funker også på github, google, gcp
 ---
 # Yank, paste and delete
 .task[[Task 2.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.1.txt)]
@@ -200,13 +224,9 @@ template: level
 ### `2gg` <u>g</u>o to line 2
 ### `G` <u>g</u>o to end of file
 ]
-.right-col[
-### `0` or `^` go to the start of the line
-### `$` go to the end of the line
-]
 ???
-- Repeated commands indicate that movement is expected
-- Variants of commands often have a capital Letter
+- Varianter av kommandoer har store bokstaver
+- Enkelte kommandoer er gjentatt - det indikerer at vim egentlig forventer noe mer
 ---
 template: level
 # LEVEL 3
@@ -220,6 +240,9 @@ template: level
 ### `<surrounding>` (optional)
 ### `<text object>` / `<motion>`
 ]
+???
+- Nå det blir interessant
+- Så hva betyr det?
 ---
 class: center, inverse
 # Commands
@@ -246,28 +269,18 @@ class: center, inverse
 ### `2dj` two times <u>d</u>elete down
 ### `D` <u>d</u>elete to end of line
 ]
---
-.right-col[
-### `dit` <u>d</u>elete <u>i</u>nside html <u>tag</u>
-### `dat` <u>d</u>elete <u>a</u>round html <u>tag</u>
-### `d2aw` <u>d</u>elete twice <u>a</u>round <u>w</u>ord
-### `dap` <u>d</u>elete <u>a</u>round <u>p</u>aragraph
-]
 ---
 # Change
 .task[[Task 3.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-3.0.txt)]
-## Some things have to change, so insert mode is useful.
+## Some things have to change, so moving to insert mode is useful.
 .left-col[
 ### `cw` <u>c</u>hange <u>w</u>ord
 ### `c2w` <u>c</u>hange two <u>w</u>ords
 ### `2cj` two times <u>c</u>hange down
 ### `C` <u>c</u>hange to end of line
 ]
-<br>
-### `ci[` <u>c</u>hange <u>i</u>nside html <u>tag</u>
-### `cat` <u>c</u>hange <u>a</u>round html <u>tag</u>
-### `c2aw` <u>c</u>hange twice <u>a</u>round <u>w</u>ord
-### `cap` <u>c</u>hange <u>a</u>round <u>p</u>aragraph
+???
+- Med cw fjernes ordet, som med dw, men man går også i insert mode.
 ---
 template: level
 # LEVEL 4
@@ -278,10 +291,11 @@ template: level
 ## Change, delete, visual, etc.
 ## 🤯
 .left[
+### `dap` <u>d</u>elete <u>a</u>round <u>p</u>aragaph
 ### `d3ap` <u>d</u>elete thrice <u>a</u>round <u>p</u>aragaph
 ### `ci"` <u>c</u>hange <u>i</u>nside " "
 ### `di(` <u>d</u>elete <u>i</u>nside ( )
-### `c2a{` <u>c</u>hange two levels <u>a</u>round { { } }
+### `ca{` <u>c</u>hange two levels <u>a</u>round { { } }
 ### `v2ap` <u>v</u>isual twice <u>a</u>round <u>p</u>aragraph
 ]
 ---
@@ -343,9 +357,9 @@ template: level
 ...
 ]
 ???
-- Stuff you'd use multiple cursors for.
-- More useful if you e.g. forgot one.
-- Works on all edits and operations, e.g. like va(J
+- Ting du ofte ville bruke multiple cursors for
+- Mer nyttig om du har glemt én, og vil gjenta det
+- Men dette funker på alle edits som er én kommando, e.g. like va(J
 ---
 template: level
 # LEVEL 7
@@ -360,6 +374,7 @@ template: level
 ### `"ky` yank line to register `k`
 ### `"kp`
 ]
+- Alt du endrer eller fjerner havner i et register
 ---
 # Keep useful commands in registers
 .task[[Task 7.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-7.1.txt)]
@@ -369,17 +384,17 @@ template: level
 ### Select it with `V`
 ### Yank it to a register with, e.g. like `"ky`
 ### Type `:registers` or `:reg` to see it in the list of registers
-### Run it with `@k`
+### Run it with macros!
 ]
 ---
 template: level
 # LEVEL 8
 ## "Unstoppable, full on neckbeard mode"
-<img src="neckbeard.png"/>
+<img src="neckbeard.png" style="width: 20vw;"/>
 ---
 # Macros
 .task[[Task 8.0](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-8.0.txt)]
-## That's a lot of keys. Recording them would be useful.
+## That's a lot of keys!! Recording them would be useful.
 .left[
 ### `q<char>` start recording macro to register `<char>`
 ### ...press the keys to record...
@@ -387,6 +402,12 @@ template: level
 ### `@<char>` to play it back
 ### `@@` repeat previously played back macro
 ]
+???
+- Kan jo ikke gå rundt å trykke alt dette hver gang
+- Om du feks skal gjøre en endring 100 ganger
+- Da har du kanskje egentlig andre problemer
+- Hvertfall, macros
+- Kan ta opp en sekvens med kommandoer til en hvilken som helst tast
 ---
 # Edit macros
 .task[[Task 8.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-8.1.txt)]
@@ -394,7 +415,7 @@ template: level
 .left[
 ### `"qp` to paste the previous macro you saved to `q`
 ### Edit it like you please
-### Go to the beginning of the line with `0'`
+### Go to the beginning of the line with `0`
 ### Delete it to a register, e.g. with `"wD` (this ensures you skip the trailing newline)
 ### Play it back with `@w`
 ]
@@ -409,3 +430,7 @@ template: level
 ### Operations on registers
 ### ++
 ]
+---
+# Takk for meg!
+## 🤓
+## <a href="https://twitter.com/torgeir/">@torgeir</a>
