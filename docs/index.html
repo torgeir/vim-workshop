@@ -238,6 +238,7 @@ template: level
 ???
 - Iblant er det klønete å telle ord, så da kan du heller søke
 - / funker også på github, google, gcp
+- Varianter av kommandoer har store bokstaver
 ---
 # Yank, paste and delete
 .task[[Task 2.1](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.1.txt)]
@@ -252,6 +253,7 @@ template: level
 ]
 ???
 /^Lorem
+- Enkelte kommandoer er gjentatt - det indikerer at vim egentlig forventer noe mer
 ---
 # Jump
 .task[[Task 2.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-2.2.html)]
@@ -260,9 +262,6 @@ template: level
 ### `2gg` <u>g</u>o to line 2
 ### `G` <u>g</u>o to end of file
 ]
-???
-- Varianter av kommandoer har store bokstaver
-- Enkelte kommandoer er gjentatt - det indikerer at vim egentlig forventer noe mer
 ---
 template: level
 # LEVEL 3
@@ -303,6 +302,7 @@ class: center, inverse
 ### `dw` <u>d</u>elete <u>w</u>ord
 ### `d2w` <u>d</u>elete two <u>w</u>ords
 ### `2dj` two times <u>d</u>elete down
+### `dap` <u>d</u>elete <u>a</u>round <u>p</u>aragraph
 ### `D` <u>d</u>elete to end of line
 ]
 ---
@@ -313,6 +313,7 @@ class: center, inverse
 ### `cw` <u>c</u>hange <u>w</u>ord
 ### `c2w` <u>c</u>hange two <u>w</u>ords
 ### `2cj` two times <u>c</u>hange down
+### `cap` <u>c</u>hange <u>a</u>round <u>p</u>aragraph
 ### `C` <u>c</u>hange to end of line
 ]
 ???
@@ -346,10 +347,10 @@ template: level
 ### `v` visual mode
 ### `V` linewise visual mode
 ### `Ctrl-v` blockwise visual mode
-### `y` while in visual, to yank what you have selected
 ]
 --
 .right-col[
+### `y` while in visual, to yank what you have selected
 ### `c` <u>c</u>hange to remove it and go to insert mode
 ### `A` <u>a</u>ppend text behind selection
 ### `I` <u>i</u>nsert text before selection
@@ -365,6 +366,9 @@ template: level
 ### `T<char>` move backward un<u>t</u>il the char
 ### Of course you can combine it with other operations, e.g. `df-`
 ]
+???
+- f, feks fra vimium i chrome/firefox
+- noen flere varianter
 ---
 # Join lines
 .task[[Task 5.2](https://github.dev/torgeir/vim-workshop/blob/main/tasks/task-5.2.txt)]
@@ -410,6 +414,7 @@ template: level
 ### `"ky` yank line to register `k`
 ### `"kp`
 ]
+???
 - Alt du endrer eller fjerner havner i et register
 ---
 # Keep useful commands in registers
@@ -420,7 +425,7 @@ template: level
 ### Select it with `V`
 ### Yank it to a register with, e.g. like `"ky`
 ### Type `:registers` or `:reg` to see it in the list of registers
-### Run it with macros!
+### Run it with `@k`!
 ]
 ---
 template: level
@@ -467,7 +472,7 @@ template: level
 ### ++
 ]
 ---
-# Takk for meg!
+# Takk for at du deltok!
 ## 🤓
 ## <a href="https://twitter.com/torgeir/">@torgeir</a></textarea>
     <script src="remark-latest.min.js"></script>
